@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rinjani — Install</title>
+<link rel="stylesheet" href="/assets/site.css">
+<script>
+  // Show Bahasa Indonesia first on phones set to Indonesian; anyone can switch.
+  function setLang(l) { document.documentElement.lang = l;
+    document.querySelectorAll('[data-l]').forEach(function (e) { e.hidden = e.dataset.l !== l; }); }
+  window.addEventListener('DOMContentLoaded', function () { setLang((navigator.language || 'en').slice(0, 2) === 'id' ? 'id' : 'en'); });
+</script>
+</head>
+<body>
+<header class="band"><div class="in"><h1>Rinjani</h1>
+  <p data-l="en">Our private chat. By invitation only.</p><p data-l="id" hidden>Obrolan pribadi kita. Hanya dengan undangan.</p></div></header>
+<main>
+<p class="lang"><a href="#" onclick="setLang('en');return false">English</a> · <a href="#" onclick="setLang('id');return false">Bahasa Indonesia</a></p>
+
+<section data-l="en">
+  <div class="card"><h2>Before you start</h2>
+    <p>You need an invitation. Someone in the group invites your email address and an admin approves it. If you haven't been invited, ask a member.</p></div>
+  <div class="card"><h2>1. Get the app</h2>
+    <a class="btn off" href="#">Android (APK) — coming soon</a>
+    <a class="btn off" href="#">iPhone (TestFlight) — coming soon</a>
+    <a class="btn off" href="#">Mac (download) — coming soon</a></div>
+  <div class="card"><h2>2. Android install steps</h2>
+    <ol><li>Tap the Android button above and download the file.</li>
+    <li>Open the downloaded file. If Android asks, allow your browser to install apps.</li>
+    <li class="todo">Step to confirm after we test Google's device-authorisation step on a real phone.</li>
+    <li>Open Rinjani.</li></ol></div>
+  <div class="card"><h2>3. Sign in</h2>
+    <ol><li>Type the email address we invited.</li><li>Tap <b>Email me a code</b>.</li>
+    <li>Open the email from Rinjani, find the 6-digit code, type it in the app.</li>
+    <li>Choose the name other members will see. Allow notifications.</li></ol>
+    <p>No password to remember. Each time you sign in, we email you a new code.</p></div>
+</section>
+
+<section data-l="id" hidden>
+  <div class="card"><h2>Sebelum mulai</h2>
+    <p>Anda memerlukan undangan. Seorang anggota grup mengundang alamat email Anda, lalu admin menyetujuinya. Jika belum diundang, mintalah kepada salah satu anggota.</p></div>
+  <div class="card"><h2>1. Ambil aplikasinya</h2>
+    <a class="btn off" href="#">Android (APK) — segera hadir</a>
+    <a class="btn off" href="#">iPhone (TestFlight) — segera hadir</a>
+    <a class="btn off" href="#">Mac (unduh) — segera hadir</a></div>
+  <div class="card"><h2>2. Langkah pasang di Android</h2>
+    <ol><li>Ketuk tombol Android di atas dan unduh filenya.</li>
+    <li>Buka file yang sudah diunduh. Jika Android bertanya, izinkan browser Anda memasang aplikasi.</li>
+    <li class="todo">Langkah ini akan dilengkapi setelah kami mencoba otorisasi perangkat dari Google di ponsel sungguhan.</li>
+    <li>Buka Rinjani.</li></ol></div>
+  <div class="card"><h2>3. Masuk</h2>
+    <ol><li>Ketik alamat email yang kami undang.</li><li>Ketuk <b>Email me a code</b> (Kirim kode lewat email).</li>
+    <li>Buka email dari Rinjani, cari kode 6 angka, lalu ketik di aplikasi.</li>
+    <li>Pilih nama yang akan dilihat anggota lain. Izinkan notifikasi.</li></ol>
+    <p>Tidak ada kata sandi yang perlu diingat. Setiap kali masuk, kami kirim kode baru lewat email.</p></div>
+</section>
+</main>
+</body>
+</html>
