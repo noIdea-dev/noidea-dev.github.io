@@ -17,3 +17,8 @@ a { color:var(--blue); text-decoration:none; } a:hover { text-decoration:underli
 ol { padding-left:22px; } li { margin:6px 0; }
 .lang { text-align:right; font-size:.95rem; }
 .todo { background:#fff3d6; color:#5a4300; border-radius:8px; padding:2px 8px; font-size:.85rem; }
+
+details { margin:8px 0; padding:8px 12px; border:1px solid var(--line); border-radius:10px; }
+summary { cursor:pointer; font-weight:600; }
+details ul { margin:8px 0 2px; padding-left:20px; color:var(--ink2); }
+code { background:var(--line); padding:1px 5px; border-radius:5px; }
